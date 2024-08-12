@@ -1,0 +1,42 @@
+@import "@/app/styles/index";
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: hp(70);
+    left: 0;
+    width: 100vw;
+}
+
+.loader {
+    width: wp(80);
+    margin: 0 auto;
+
+    animation: rotate360 1s infinite linear;
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 10px;
+    color: $brand;
+}
