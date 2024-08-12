@@ -18,9 +18,17 @@
     }
 }
 
+.root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 .logo {
     position: absolute;
-    top: hp(80);
+    top: hp(120);
     left: 50%;
     transform: translateX(-50%) translateY(0);
     height: hp(88);
@@ -40,7 +48,7 @@
 .cookie {
     position: absolute;
     height: hp(317);
-    top: hp(187);
+    top: hp(227);
     left: 50%;
     transform: translateX(-50%) translateY(0);
     animation-name: cookie-show;
