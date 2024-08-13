@@ -1,0 +1,57 @@
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    &.is-loading {
+        & .loader {
+            opacity: 1;
+        }
+    }
+
+    &.is-content {
+        & .content {
+            opacity: 1;
+        }
+    }
+}
+
+.loader,
+.content {
+    opacity: 0;
+
+    transition: 0.3s ease opacity;
+}
+
+.content {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loader {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+
+    animation: rotate360 1s infinite linear;
+}

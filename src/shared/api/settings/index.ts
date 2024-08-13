@@ -1,0 +1,1 @@
+import { settingsApi } from './rest.mock'

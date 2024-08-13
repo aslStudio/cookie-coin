@@ -1,0 +1,28 @@
+@import "@/app/styles/index";
+
+.root {
+    box-sizing: border-box;
+}
+
+.view {
+    &-surface {
+        background-color: $surface; 
+    }
+
+    &-surface-brand {
+        background-color: $surface;
+        border: 3px solid $brand;
+    }
+}
+
+.size {
+    &-m {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    &-l {
+        padding: 15px;
+        border-radius: 25px;
+    }
+}

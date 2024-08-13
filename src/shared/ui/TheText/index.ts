@@ -1,0 +1,1 @@
+export { TheText } from './TheText'

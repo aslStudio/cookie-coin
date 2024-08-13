@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 25px;
+    aspect-ratio: 1;
+    margin-right: 5px;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

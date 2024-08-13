@@ -1,0 +1,55 @@
+@import "@/app/styles/index";
+
+.root {
+    display: block;
+    margin: 0;
+}
+
+.size {
+    &-p1 {
+        font-size: 20px;
+        font-family: $mainFontFamily;
+    }
+
+    &-p2 {
+        font-size: 14px;
+        font-family: $secondFontFamily;
+    }
+
+    &-p3 {
+        font-size: 12px;
+        font-family: $mainFontFamily;
+    }
+
+    &-h3 {
+        font-size: 35px;
+        font-family: $mainFontFamily;
+    }
+
+    &-h4 {
+        font-size: 30px;
+        font-family: $mainFontFamily;
+    }
+
+    &-h5 {
+        font-size: 25px;
+        font-family: $mainFontFamily;
+    }
+
+    &-h6 {
+        font-size: 20px;
+        font-family: $mainFontFamily;
+    }
+}
+
+.view {
+    &-brand {
+        color: $brand;
+    }
+
+    &-surface {
+        color: $surface;
+        text-shadow: 2px 0 $brand, -2px 0 $brand, 0 2px $brand, 0 -2px $brand,
+             1px 1px $brand, -1px -1px $brand, 1px -1px $brand, -1px 1px $brand;
+    }
+}

@@ -1,0 +1,13 @@
+@import "@/app/styles/index";
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+    padding-left: wp(20);
+    padding-right: wp(20);
+}

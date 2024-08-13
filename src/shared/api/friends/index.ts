@@ -1,0 +1,1 @@
+export { friendsApi } from './rest.mock'

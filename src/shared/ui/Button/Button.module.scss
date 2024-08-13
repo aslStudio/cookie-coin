@@ -1,0 +1,39 @@
+@import "@/app/styles/index";
+
+.root {
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: $mainFontFamily;
+    width: 100%;
+}
+
+.view {
+    &-brand {
+        background-color: $brand;
+        color: $surface;
+        border: none;
+        outline: none;
+    }
+
+    &-secondary {
+        background-color: $surface;
+        color: $brand;
+        border: 3px solid $brand;
+        outline: none;
+    }
+}
+
+.size {
+    &-l {
+        font-size: 20px;
+    }
+
+    &-m {
+        font-size: 12px;
+    }
+}
+
+.is-shadow {
+    box-shadow: 0 0 10px 0 rgba(149, 216, 238, 0.5);
+}
