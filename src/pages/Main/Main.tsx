@@ -1,7 +1,11 @@
 import React from 'react'
+import {FarmingModule} from "@/features/farming/ui/FarmingModule";
+import {ScrollContainer} from "@/shared/ui/ScrollContainer";
+
+import styles from './Main.module.scss'
 
 export const Main = () => (
-    <div>
-        <h1>TITLE</h1>
-    </div>
+    <ScrollContainer className={styles.root}>
+        <FarmingModule />
+    </ScrollContainer>
 )

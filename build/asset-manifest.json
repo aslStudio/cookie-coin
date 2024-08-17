@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4f32fcc.css",
-    "main.js": "/static/js/main.9b788922.js",
+    "main.css": "/static/css/main.19f48d76.css",
+    "main.js": "/static/js/main.53178940.js",
     "static/js/453.2c396120.chunk.js": "/static/js/453.2c396120.chunk.js",
     "static/media/cookie.png": "/static/media/cookie.1c0774922efe0cc56420.png",
     "static/media/RubikBubbles-Regular.woff": "/static/media/RubikBubbles-Regular.3cb6f548d472af484c26.woff",
@@ -13,12 +13,12 @@
     "static/media/loader.png": "/static/media/loader.21e7d067743abdd1ea19.png",
     "static/media/cookie-coin.png": "/static/media/cookie-coin.30d58bbdd063b3c64f21.png",
     "index.html": "/index.html",
-    "main.a4f32fcc.css.map": "/static/css/main.a4f32fcc.css.map",
-    "main.9b788922.js.map": "/static/js/main.9b788922.js.map",
+    "main.19f48d76.css.map": "/static/css/main.19f48d76.css.map",
+    "main.53178940.js.map": "/static/js/main.53178940.js.map",
     "453.2c396120.chunk.js.map": "/static/js/453.2c396120.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4f32fcc.css",
-    "static/js/main.9b788922.js"
+    "static/css/main.19f48d76.css",
+    "static/js/main.53178940.js"
   ]
 }
