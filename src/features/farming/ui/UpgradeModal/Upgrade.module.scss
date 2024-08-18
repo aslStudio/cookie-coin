@@ -1,0 +1,23 @@
+.title {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.button {
+    margin-top: 15px;
+}

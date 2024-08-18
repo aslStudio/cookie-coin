@@ -1,20 +1,14 @@
 @import "@/app/styles/index";
 
-@keyframes cookie-show {
-    from {
-        transform: translateX(-200%) rotate(-180deg);
+@keyframes cookie-animation {
+    0% {
+        transform: translateX(-50%) rotate(0deg) scale(1);
     }
-    to {
-        transform: translateX(-50%) rotate(0deg);
+    50% {
+        transform: translateX(-50%) rotate(30deg) scale(0.9);
     }
-}
-
-@keyframes logo-show {
-    from {
-        transform: translateX(-50%) translateY(-300%);
-    }
-    to {
-        transform: translateX(-50%) translateY(0);
+    100% {
+        transform: translateX(-50%) rotate(0deg) scale(1);
     }
 }
 
@@ -61,6 +55,10 @@
     &.is-hidden {
         transform: translateX(200%) rotate(180deg);
         opacity: 0;
+    }
+
+    &.is-animated {
+        animation: infinite cookie-animation linear 1s;
     }
 }
 

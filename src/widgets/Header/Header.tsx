@@ -1,11 +1,9 @@
 import React, {useEffect, useMemo, useState} from "react";
-import {toFormattedNumber} from "@/shared/lib/number";
+import { useLocation } from "react-router-dom";
 
-import ton from '@/shared/assets/images/coins/ton-coin.png'
-import cookie from '@/shared/assets/images/coins/cookie-coin.png'
+import {CookieBalance, TonBalance} from "@/entities/balance/ui/Balance";
 
 import styles from './Header.module.scss'
-import { useLocation } from "react-router-dom";
 
 export const Header = () => {
     const [isShowed, setIsShowed] = useState(false)
@@ -23,35 +21,8 @@ export const Header = () => {
 
     return (
         <header className={classes}>
-            <Balance type="cookie" value={10_000} />
-            <Balance type="ton" value={10_000} />
+            <CookieBalance />
+            <TonBalance />
         </header>
     )
 }
-
-type BalanceProps = {
-    type: 'cookie' | 'ton'
-    value: number
-}
-
-const Balance = React.memo<BalanceProps>(({ type, value }) => {
-    const showedValue = useMemo(() => toFormattedNumber(value), [value])
-    
-    const coin = useMemo(() => {
-        if (type === 'cookie') {
-            return cookie
-        }
-
-        return ton
-    }, [type])
-
-    return (
-        <button className={styles.balance}>
-            <img 
-                src={coin} 
-                className={styles.coin} 
-                alt="coin" />
-            <p className={styles.value}>{showedValue}</p>
-        </button>
-    )
-})

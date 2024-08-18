@@ -27,28 +27,3 @@
         transform: translateY(0);
     }
 }
-
-.balance {
-    outline: none;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    padding: 3px 8px;
-    border: 2px solid $surface;
-    border-radius: 50px;
-    box-sizing: border-box;
-}
-
-.coin {
-    width: 35px;
-    aspect-ratio: 1;
-}
-
-.value {
-    display: block;
-    font-size: 20px;
-    margin: 0;
-    margin-left: 10px;
-    font-family: $mainFontFamily;
-    color: $surface;
-}

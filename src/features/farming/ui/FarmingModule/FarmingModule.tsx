@@ -1,4 +1,4 @@
-import React, {useMemo} from "react"
+import React, {useMemo, useState} from "react"
 import {useUnit} from "effector-react";
 import {farmingModel} from "@/features/farming/model";
 import {TheText} from "@/shared/ui/TheText";
@@ -7,6 +7,8 @@ import {reflect} from "@effector/reflect";
 import {toFormattedNumber} from "@/shared/lib/number";
 
 import cookie from '@/shared/assets/images/coins/cookie-coin.png'
+
+import { UpgradeModal } from '../UpgradeModal'
 
 import styles from './FarmingModule.module.scss'
 
@@ -54,22 +56,23 @@ const NotStartedReflect = reflect({
 const Started = React.memo<{
     total: number
     maxTotal: number
-    onUpgrade: () => void
     onClaim: () => void
     className: string
 }>(({
-        className,
-        total,
-        maxTotal,
-        onClaim,
-    onUpgrade
+    className,
+    total,
+    maxTotal,
+    onClaim,
 }) => {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className={className}>
             <TheText className={styles.total} size={'h3'} color={'surface'}>{toFormattedNumber(total)} $COOKIE</TheText>
             <ProgressBar total={total} maxTotal={maxTotal} />
             <Button isShadow={true} view={'brand'} size={'l'} onClick={onClaim}>CLAIM</Button>
-            <Button className={styles.upgrade} view={'secondary'} size={'m'} onClick={onUpgrade}>UPGRADE</Button>
+            <Button className={styles.upgrade} view={'secondary'} size={'m'} onClick={() => setIsOpen(true)}>UPGRADE</Button>
+            <UpgradeModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </div>
     )
 })
@@ -79,8 +82,7 @@ const StartedReflect = reflect({
     bind: {
         total: farmingModel.$total,
         maxTotal: farmingModel.$maxTotal,
-        onClaim: () => {},
-        onUpgrade: () => {},
+        onClaim: farmingModel.totalClaimed,
     }
 })
 

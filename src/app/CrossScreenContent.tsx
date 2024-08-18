@@ -7,6 +7,8 @@ import {useLocation} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import { Header } from '@/widgets/Header';
 import { NavBar } from '@/widgets/NavBar';
+import {useUnit} from "effector-react/effector-react.umd";
+import {farmingModel} from "@/features/farming/model";
 
 const visiablePathes = [
     '/',
@@ -15,6 +17,9 @@ const visiablePathes = [
 
 export const CrossScreenContent = () => {
     const location = useLocation()
+
+    const isAnimated = useUnit(farmingModel.$isFarmingAnimation)
+
     const [ isVisiable, setIsVisiable ] = useState(true)
 
     useEffect(() => {
@@ -28,11 +33,18 @@ export const CrossScreenContent = () => {
                 src={background}
                 alt={'background'}/>
             <img
-                className={[styles.logo, !isVisiable && styles['is-hidden']].join(' ')}
+                className={[
+                    styles.logo,
+                    !isVisiable && styles['is-hidden']
+                ].join(' ')}
                 src={logo}
-                alt={'logo'}/>
+                alt={'logo'}/>s
             <img
-                className={[styles.cookie, !isVisiable && styles['is-hidden']].join(' ')}
+                className={[
+                    styles.cookie,
+                    !isVisiable && styles['is-hidden'],
+                    isAnimated && styles['is-animated']
+                ].join(' ')}
                 src={cookie}
                 alt={'cookie'}/>
             <Header />

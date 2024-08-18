@@ -1,0 +1,51 @@
+@import "@/app/styles/index";
+
+.balance {
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+    border: 2px solid $surface;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.coin {
+    width: 35px;
+    aspect-ratio: 1;
+}
+
+.value {
+    display: block;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 10px;
+    font-family: $mainFontFamily;
+    color: $surface;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.modal-value {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.button {
+    & + & {
+        margin-top: 15px;
+    }
+}
