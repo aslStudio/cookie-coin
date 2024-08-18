@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dbcd391c.css",
-    "main.js": "/static/js/main.ff292153.js",
+    "main.js": "/static/js/main.e1ad1483.js",
     "static/js/453.2c396120.chunk.js": "/static/js/453.2c396120.chunk.js",
     "static/media/cookie.png": "/static/media/cookie.1c0774922efe0cc56420.png",
     "static/media/RubikBubbles-Regular.woff": "/static/media/RubikBubbles-Regular.3cb6f548d472af484c26.woff",
@@ -14,11 +14,11 @@
     "static/media/cookie-coin.png": "/static/media/cookie-coin.30d58bbdd063b3c64f21.png",
     "index.html": "/index.html",
     "main.dbcd391c.css.map": "/static/css/main.dbcd391c.css.map",
-    "main.ff292153.js.map": "/static/js/main.ff292153.js.map",
+    "main.e1ad1483.js.map": "/static/js/main.e1ad1483.js.map",
     "453.2c396120.chunk.js.map": "/static/js/453.2c396120.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbcd391c.css",
-    "static/js/main.ff292153.js"
+    "static/js/main.e1ad1483.js"
   ]
 }

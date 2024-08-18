@@ -38,7 +38,7 @@ export const CrossScreenContent = () => {
                     !isVisiable && styles['is-hidden']
                 ].join(' ')}
                 src={logo}
-                alt={'logo'}/>s
+                alt={'logo'}/>
             <img
                 className={[
                     styles.cookie,
